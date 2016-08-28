@@ -1,0 +1,19 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+#wrapper {
+    height: 100%;
+    width: 100%;
+}
+#content {
+	border: dotted 1px orange;
+	
+	position: absolute;
+	left: 30%;
+	top: 35%;
+	
+	height: 30%;
+	width: 40%;
+	
+}
