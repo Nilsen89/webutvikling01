@@ -1,19 +1,26 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	background-color: #FFFFFF;
 }
+
 #wrapper {
     height: 100%;
     width: 100%;
 }
+
 #content {
-	border: dotted 1px orange;
+	background-color: white;
+	border: solid 1px #5A2E2E;
 	
 	position: absolute;
 	left: 30%;
-	top: 35%;
+	top: 30%;
 	
-	height: 30%;
+	height: 50%;
 	width: 40%;
-	
+}
+
+.btn {
+	width: 100%;
 }
