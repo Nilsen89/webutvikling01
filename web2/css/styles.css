@@ -1,0 +1,51 @@
+html, body {
+	width:100%;
+	height:100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrapper {
+	height: 100%;
+    width: 100%;
+	background: url('../src/bg3.png') no-repeat;
+	background-position: 50% 50%;
+}
+
+#content {
+	position: absolute;
+	left: 15%;
+	top: 15%;
+	height: 60%;
+	width: 60%;
+	float: left;
+}
+
+.col {
+	height: 25%;
+	width: 100%;
+	float: left;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	text-align: left;
+	font-family: Impact, Charcoal, sans-serif;
+	color: #424242;
+	font-size: 44px;
+	line-height: 85%
+}
+
+#popup { 
+	float: right;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 80%;
+	height: 0%;
+	transition: all .3s ease-out;
+	overflow: hidden;
+}
+
+#learn {
+	font-size: 20px;
+	margin-top: -30px;
+	padding: -10px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
