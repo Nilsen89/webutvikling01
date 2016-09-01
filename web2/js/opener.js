@@ -1,24 +1,30 @@
 window.addEventListener('load', onLoad);
-
 var open = false;
 
 function onLoad() {
 	console.log("script loaded");
 	
 	var popup = document.getElementById('popup');
-	var learn = document.getElementById('learn');
-	
-	document.addEventListener('click', 
-		function() {
-			if(open) {
-				learn.innerHTML = "click<br> ANYWHERE<br>to<br> learn<br> more<br> ◄";
-				popup.style.height = "0%";
-				open = !open;
-			} else {
-				learn.innerHTML = "click<br> ANYWHERE<br>to<br> learn<br> more<br> ►";
-				popup.style.height = "70%";
-				open = !open;
+	var learn = document.getElementById('learner');
+	var close = document.getElementById('closer');
+
+	learn.addEventListener('click', 
+		function(x) {
+			if(!open) {
+				console.log("LOGGER: Anywhere clicked to open popup...");
+				console.log(learn.innerHTML);
+				document.getElementById("arrow").innerHTML = "►";
+				popup.style.height = "auto";
+				open = true;
 			}
+		}
+	);
+	close.addEventListener('click', 
+		function() {
+			console.log("LOGGER: Closer clicked to close popup...");
+			popup.style.height = "0";
+			document.getElementById("arrow").innerHTML = "◄";
+			open = false;
 		}
 	);
 }
